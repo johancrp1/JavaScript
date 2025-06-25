@@ -38,7 +38,10 @@ const numeros = [10, 20, 30, 40, 50];
 // Crear un nuevo array con cada número envuelto en <li>
 const listaHTML = numeros.map(numero => `<li>${numero}</li>`);
 
-console.log(listaHTML);
+//Mostrar en el DOM
+const contenedorLista = document.getElementById('contenedor-lista');
+
+contenedorLista.innerHTML = listaHTML.join("");
 
 // Parte 2: Objetos pensados para mostrarse
 
